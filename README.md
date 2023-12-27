@@ -1,5 +1,8 @@
 # CODSOFT
+##BAYMAX
 ## Mood Tracker Bot
-A Mood Tracker Bot is a chatbot designed to help users monitor and manage their emotional well-being by tracking their moods over time. 
-The bot engages users in conversations, prompts them to log their daily emotions, and may offer insights or resources based on the data collected.
+A Mood Tracker Bot is a chatbot designed to help users to manage their emotional well-being by providing them with appropriate suggestions as a person.
+
+due to limited data base and time  we are sticking to key elements and common moods.
+
 
