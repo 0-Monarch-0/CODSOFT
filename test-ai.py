@@ -2,7 +2,7 @@ a,b,c,d,e,f,g,h,i="_","_","_","_","_","_","_","_","_"
 print(f"{a}"+"|"+f'{b}'+"|"+f"{c}\n"+f"{d}"+"|"+f'{e}'+"|"+f"{f}\n"+f"{g}"+"|"+f'{h}'+"|"+f"{i}\n")
 chance = ""
 global count
-
+# ai will play while looking after the conditions which makes it unbeatable 
 def ai(chance):
     global a,b,c,d,e,f,g,h,i,count
     if(count==0):
@@ -157,6 +157,9 @@ def ai(chance):
             d=chance
             count+=1        
     print(f"{a}"+"|"+f'{b}'+"|"+f"{c}\n"+f"{d}"+"|"+f'{e}'+"|"+f"{f}\n"+f"{g}"+"|"+f'{h}'+"|"+f"{i}\n")
+
+
+#checks the whole box if any one won the game.
 def check():
 
     global a,b,c,d,e,f,g,h,i
@@ -186,7 +189,7 @@ def check():
         return True
     else:
         return False
-    
+ # user request goes into this funtion and place his choice    
 def table(row,column,chance):
     global a,b,c,d,e,f,g,h,i,count
     if (row == 1 and column == 1 and a == "_"):
@@ -210,12 +213,13 @@ def table(row,column,chance):
     else:
         print("already taken!!!")
         count -= 1
-    print(f"{a}"+"|"+f'{b}'+"|"+f"{c}\n"+f"{d}"+"|"+f'{e}'+"|"+f"{f}\n"+f"{g}"+"|"+f'{h}'+"|"+f"{i}\n")
     
-
+#code starts from here 
 print("Think this as the 3x3 matrix.")
 count = 0
+# an infinite loop runs untill one wins or lose or ties
 while(True):
+    # user plays 
     if (count%2 == 1):
         print("Turn:O")
         user_input_row=int(input("enter row:"))
@@ -227,6 +231,7 @@ while(True):
         if count == 9:
             print("tie")
             break
+    #AI plays here 
     elif(count%2 == 0):
         ai("X")
         if(check()):
