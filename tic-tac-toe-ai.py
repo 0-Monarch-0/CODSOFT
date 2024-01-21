@@ -2,12 +2,16 @@ a,b,c,d,e,f,g,h,i="_","_","_","_","_","_","_","_","_"
 print(f"{a}"+"|"+f'{b}'+"|"+f"{c}\n"+f"{d}"+"|"+f'{e}'+"|"+f"{f}\n"+f"{g}"+"|"+f'{h}'+"|"+f"{i}\n")
 chance = ""
 global count
-# ai will play while looking after the conditions which makes it unbeatable 
+
+
 def ai(chance):
+
     global a,b,c,d,e,f,g,h,i,count
+
     if(count==0):
         e = chance
         count+=1
+
     if(count == 2):
         if(a=="O"):
             d=chance
@@ -33,104 +37,121 @@ def ai(chance):
         elif(i=="O"):
             b=chance
             count+=1 
+
     if(count == 4):
         if(a=="O" and f=="O" and b=="_" and c=="_" and g=="_" and h=="_" and i=="_" and count == 4):
-            b = chance 
-            count+=1
+             b = chance 
+             count+=1
         if(a=="O" and f=="_" and (b!="_" and  c!="_" and  g!="_" and  h!="_" and  i!="_") and count == 4):
              f = chance 
              count+=1
+
         if(b=="O" and a=="O"and d=="_" and f=="_" and g=="_" and h=="_" and c=="_" and  count == 4):
-            c=chance 
-            count+=1
+             c=chance 
+             count+=1
         if(b=="O" and a=="_"and (d!="_" and  f!="_" and  g!="_" and  h!="_" and  c!="_") and  count == 4):
              a = chance 
              count+=1
+
         if(c=="O" and b=="O" and a=="_" and d=="_" and f=="_" and g=="_" and i=="_" and count == 4):
-            a = chance 
-            count+=1
+             a = chance 
+             count+=1
         if(c=="O" and b=="_" and (a!="_" and  d!="_" and  f!="_" and  g!="_" and  i!="_") and count == 4):
              b=chance 
              count+=1
+
         if(d=="O" and i=="O" and b=="_" and c=="_" and f=="_" and g=="_" and h=="_" and count == 4):
             b=chance 
             count+=1
         if(d=="O" and i=="_" and (b!="_" and  c!="_" and  f!="_" and  g!="_" and  h!="_") and count == 4):
              i=chance 
              count+=1
+
         if(f=="O" and g=="O" and a=="_" and b=="_" and  d=="_" and h=="_" and i=="_" and count == 4):
             a=chance 
             count+=1
         if(f=="O" and g=="_" and (a!="_" and  b!="_" and   d!="_" and  h!="_" and  i!="_") and count == 4):
              g=chance 
              count+=1
+
         if(g=="O" and f=="O" and a=="_" and b=="_" and c=="_" and h=="_" and i=="_" and count == 4):
-            b = chance 
-            count+=1
+             b = chance 
+             count+=1
         if(g=="O" and f=="_" and (a!="_" and  b!="_" and  c!="_" and  h!="_" and  i!="_") and count == 4):
              f=chance 
              count+=1
+
         if(h=="O" and c=="O" and a=="_" and b=="_" and d=="_" and f=="_" and i=="_" and count == 4):
-            a = chance 
-            count+=1
+             a = chance 
+             count+=1
         if(h=="O" and c=="_" and (a!="_" and  b!="_" and  d!="_" and  f!="_" and  i!="_") and count == 4):
              c = chance 
              count+=1
+
         if(i=="O" and h=="O" and a=="_" and c=="_" and d=="_" and f=="_" and g=="_" and count == 4):
-            g = chance 
-            count+=1
+             g = chance 
+             count+=1
         if(i=="O" and h=="_" and(a!="_" and  c!="_" and  d!="_" and  f!="_" and  g!="_") and count == 4):
              h=chance 
              count+=1
+
     if(count == 6):
         if(a=="O" and f=="O" and h=="O" and c=="_" and g=="_" and i=="_" and count == 6):
-            c = chance
-            count+=1
+             c = chance
+             count+=1
         if(a=="O" and f=="O" and h=="_" and (c!="_" and g!="_" and i!="_") and count == 6):
-            h = chance
-            count+=1
+             h = chance
+             count+=1
+
         if(b=="O" and a=="O" and g=="O" and d=="_" and f=="_" and h=="_" and  count == 6):
-            f=chance
-            count+=1
+             f=chance
+             count+=1
         if(b=="O" and a=="O" and g=="_" and (h!="_" and  f!="_" and  d!="_") and count == 6):
-            g = chance 
-            count+=1
+             g = chance 
+             count+=1
+
         if(c=="O" and b=="O" and i=="O" and g=="_" and f=="_" and d=="_" and count == 6):
-            f = chance
-            count+=1
+             f = chance
+             count+=1
         if(c=="O" and b=="O" and i=="_" and (g!="_" and  f!="_" and  d!="_") and count == 6):
-            i=chance
-            count+=1
+             i=chance
+             count+=1
+
         if(d=="O" and i=="O" and g=="O" and b=="_" and h=="_" and f=="_" and count == 6):
-            b=chance
-            count+=1
+             b=chance
+             count+=1
         if(d=="O" and i=="O" and g=="_" and (b!="_" and  f!="_" and  h!="_") and count == 6):
-            g=chance
-            count+=1
+             g=chance
+             count+=1
+
         if(f=="O" and g=="O" and i =="O" and b=="_" and d=="_" and h=="_" and count == 6):
-           b=chance
-           count+=1
+             b=chance
+             count+=1
         if(f=="O" and g=="O" and i =="_" and (b!="_" and  h!="_" and  d!="_") and count == 6):
-            i=chance
-            count+=1
+             i=chance
+             count+=1
+
         if(g=="O" and f=="O" and h=="O" and a=="_" and c=="_" and i=="_" and count == 6):
-            i = chance
-            count+=1
+             i = chance
+             count+=1
         if(g=="O" and f=="O" and h=="_" and (a!="_" and  c!="_" and  i!="_") and count == 6):
-            h=chance
-            count+=1
+             h=chance
+             count+=1
+
         if(h=="O" and c=="O" and i=="O" and b=="_" and f=="_" and d=="_" and count == 6):
-            d = chance
-            count+=1
+             d = chance
+             count+=1
         if(h=="O" and c=="O" and i=="_" and (b!="_" and  f!="_" and  d!="_") and count == 6):
-            i = chance
-            count+=1
+             i = chance
+             count+=1
+
         if(i=="O" and h=="O" and c=="O" and a=="_" and f=="_" and d=="_" and count == 6):
-            f = chance
-            count+=1
+             f = chance
+             count+=1
         if(i=="O" and h=="O" and c=="_" and (a!="_" and  f!="_" and  d!="_") and count == 6):
-            c=chance
-            count+=1
+             c=chance
+             count+=1
+
     if (count==8):
         if(a=="O" and f=="O" and h=="O" and g=="O" and i=="_" and count ==8):
             i = chance
@@ -138,18 +159,49 @@ def ai(chance):
         if(a=="O" and f=="O" and h=="O" and g=="_" and i!="_" and count ==8):
             g = chance
             count+=1
+
+        if(b=="O" and a=="O" and g=="O" and f=="_" and h=="_" and d=="_" and count == 6):
+             f=chance
+             count+=1
+        if(b=="O" and a=="O" and f=="O" and d=="_" and g=="_" and h=="_" and count == 6):
+             g = chance 
+             count+=1
+
         if(c=="O" and b=="O" and i=="O" and d=="O" and g=="_" and count ==8):
             g = chance
             count+=1
         if(c=="O" and b=="O" and i=="O" and d=="_" and g!="_" and count ==8):
             d=chance
             count+=1
+
+        if(d=="O" and i=="O" and g=="O" and b=="_" and h=="_" and f=="_" and count == 6):
+             b=chance
+             count+=1
+        if(d=="O" and i=="O" and b=="O" and g=="_"  and h=="_" and f=="_" and count == 6):
+             g=chance
+             count+=1 
+
+        if(f=="O" and g=="O" and i =="O" and b=="_" and d=="_" and h=="_" and count == 6):
+             b=chance
+             count+=1
+        if(f=="O" and g=="O" and b=="O" and i =="O" and d=="_" and h=="_" and count == 6):
+             i=chance
+             count+=1
+
         if(g=="O" and f=="O" and h=="O" and a=="O" and c=="_" and count ==8):
             c = chance
             count+=1
         if(g=="O" and f=="O" and h=="O" and a=="O" and c!="_" and count ==8):
             a=chance
             count+=1
+
+        if(h=="O" and c=="O" and i=="O" and b=="_" and f=="_" and d=="_" and count == 6):
+             d = chance
+             count+=1
+        if(h=="O" and c=="O" and d=="O" and i=="_" and f=="_" and b=="_" and count == 6):
+             i = chance
+             count+=1
+
         if(i=="O" and h=="O" and c=="O" and d=="O" and a=="_" and count ==8):
             a = chance
             count+=1
@@ -159,7 +211,6 @@ def ai(chance):
     print(f"{a}"+"|"+f'{b}'+"|"+f"{c}\n"+f"{d}"+"|"+f'{e}'+"|"+f"{f}\n"+f"{g}"+"|"+f'{h}'+"|"+f"{i}\n")
 
 
-#checks the whole box if any one won the game.
 def check():
 
     global a,b,c,d,e,f,g,h,i
@@ -189,7 +240,8 @@ def check():
         return True
     else:
         return False
- # user request goes into this funtion and place his choice    
+    
+
 def table(row,column,chance):
     global a,b,c,d,e,f,g,h,i,count
     if (row == 1 and column == 1 and a == "_"):
@@ -213,13 +265,13 @@ def table(row,column,chance):
     else:
         print("already taken!!!")
         count -= 1
-    
-#code starts from here 
+    print(f"{a}"+"|"+f'{b}'+"|"+f"{c}\n"+f"{d}"+"|"+f'{e}'+"|"+f"{f}\n"+f"{g}"+"|"+f'{h}'+"|"+f"{i}\n") 
+
+
+
 print("Think this as the 3x3 matrix.")
 count = 0
-# an infinite loop runs untill one wins or lose or ties
 while(True):
-    # user plays 
     if (count%2 == 1):
         print("Turn:O")
         user_input_row=int(input("enter row:"))
@@ -231,7 +283,6 @@ while(True):
         if count == 9:
             print("tie")
             break
-    #AI plays here 
     elif(count%2 == 0):
         ai("X")
         if(check()):
