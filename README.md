@@ -7,7 +7,7 @@ due to limited data base and time  we are sticking to key elements and common mo
 ## Tic - Tac - Toe AI
 A simple tic-tac-toe game where user will play against the computer.
 
-## Restraunt recommendation system  
+## Restaurant recommendation system  
   using content-based-filtering
   we used limited databased and try not to give spaces when giving input 
   
